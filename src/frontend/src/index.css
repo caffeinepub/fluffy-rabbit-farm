@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Figtree";
+  src: url("/assets/fonts/Figtree.woff2") format("woff2");
+  font-weight: 300 900;
+  font-display: swap;
+}
+
+@layer base {
+  :root {
+    --radius: 0.625rem;
+
+    /* Earthy Farm Palette */
+    /* Brown header ~#A86A4B */
+    --farm-header: 0.56 0.09 48;
+    /* Cream section bg ~#F4F1EA */
+    --farm-cream: 0.96 0.01 80;
+    /* Hatch grid bg ~#DDE8D8 */
+    --farm-mint-bg: 0.91 0.04 145;
+    /* Mustard ~#C49A39 */
+    --farm-mustard: 0.68 0.13 75;
+    /* Sand ~#D6C07A */
+    --farm-sand: 0.8 0.1 85;
+    /* Rust ~#8F4C3A */
+    --farm-rust: 0.46 0.1 35;
+    /* Deep green ~#3F6F4B */
+    --farm-green: 0.45 0.08 150;
+    /* Card tints */
+    --farm-tint-mint: 0.95 0.03 155;
+    --farm-tint-beige: 0.95 0.03 75;
+    --farm-tint-pink: 0.93 0.03 20;
+    /* Footer green ~#5E7C66 */
+    --farm-footer: 0.52 0.06 155;
+
+    --background: 0.96 0.01 80;
+    --foreground: 0.15 0 0;
+    --card: 1 0 0;
+    --card-foreground: 0.15 0 0;
+    --popover: 1 0 0;
+    --popover-foreground: 0.15 0 0;
+    --primary: 0.56 0.09 48;
+    --primary-foreground: 1 0 0;
+    --secondary: 0.91 0.04 145;
+    --secondary-foreground: 0.15 0 0;
+    --muted: 0.93 0.02 80;
+    --muted-foreground: 0.5 0 0;
+    --accent: 0.68 0.13 75;
+    --accent-foreground: 0.15 0 0;
+    --destructive: 0.46 0.1 35;
+    --destructive-foreground: 1 0 0;
+    --border: 0.87 0.02 80;
+    --input: 0.87 0.02 80;
+    --ring: 0.56 0.09 48;
+    --chart-1: 0.68 0.13 75;
+    --chart-2: 0.8 0.1 85;
+    --chart-3: 0.46 0.1 35;
+    --chart-4: 0.45 0.08 150;
+    --chart-5: 0.56 0.09 48;
+    --sidebar: 1 0 0;
+    --sidebar-foreground: 0.15 0 0;
+    --sidebar-primary: 0.56 0.09 48;
+    --sidebar-primary-foreground: 1 0 0;
+    --sidebar-accent: 0.91 0.04 145;
+    --sidebar-accent-foreground: 0.15 0 0;
+    --sidebar-border: 0.87 0.02 80;
+    --sidebar-ring: 0.56 0.09 48;
+  }
+
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-figtree;
+  }
+}
